@@ -59,7 +59,7 @@ Train a model to classify face images as either male or female.
     ```
 5. The default dataset paths (`./train`, `./val`) will work as long as you run the notebook from inside the `Task_A` folder.
 6. The "train_dir" and "val_dir" contains training data directory path and validation data directory path respectively.
-7. For evaluating on a new dataset, change the path of "test_dir" with your data directory path.
+7. For evaluating on a new dataset, change the path of "**test_dir**" with your data directory path.
 
 ---
 
@@ -117,7 +117,7 @@ Match face images (including distorted versions) to their corresponding identiti
     │   └── task-b.ipynb
     ```
 5. The default dataset paths (`./train`, `./val`) will work as long as you run the notebook from inside the `Task_B` folder.
-6. Change the "val_dir" path if testing on another dataset.
+6. Change the "**val_dir**" path if testing on another dataset.
 
 ---
 
