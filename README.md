@@ -1,6 +1,7 @@
 # Comys Hackathon 5: Face-Intelligence-Tasks
 
-This repository contains solutions for two computer vision tasks:
+This repository contains solutions for two challenging computer vision problems using the FACECOM
+dataset:
 
 - **Task A: Gender Classification (Binary Classification)**
 - **Task B: Face Recognition with Distorted Images (Multi-Class Classification)**
