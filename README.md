@@ -22,6 +22,8 @@ Comys_Hackathon5/
 │   ├── train/         # Training images (per-person folders)
 │   ├── val/           # Validation images (per-person folders, with distortion/)
 │   └── task-b.ipynb   # Face recognition notebook
+│
+└── README.md               # This file
 ```
 
 ---
@@ -31,8 +33,11 @@ Comys_Hackathon5/
 **Objective:**  
 Train a model to classify face images as either male or female.
 
-- Uses a pretrained ResNet18 model with data augmentation and weighted sampling for class imbalance.
-- Evaluates performance with classification report and confusion matrix.
+**Highlights:**  
+- Uses a pretrained ResNet18 model
+- Includes data augmentation
+- Handles class imbalance using weighted sampling.
+- Evaluates performance with  **accuracy, precision, recall, F1-score** and **confusion matrix**.
 
 **How to Run:**
 1. Place your data in `Task_A/train/` and `Task_A/val/` with subfolders `male/` and `female/`.
@@ -41,7 +46,7 @@ Train a model to classify face images as either male or female.
     cd Comys_Hackathon5/Task_A
     ```
 3. Open and run `task-a.ipynb`.
-4. The notebook expects the following structure:
+4. Ensure your dataset is placed in the following structure:
     ```
     Task_A/
       ├── train/
@@ -61,11 +66,13 @@ Train a model to classify face images as either male or female.
 ## Task B: Face Recognition with Distorted Images
 
 **Objective:**  
-Match a face image (including distorted versions) to the correct person.
+Match face images (including distorted versions) to their corresponding identities.
 
-- Uses a pretrained FaceNet model for embedding extraction.
-- Matches distorted images to clean ones using cosine similarity.
-- Evaluates with accuracy, F1 score, and visualizations.
+**Highlights:**
+- Uses a pretrained **FaceNet** model for embedding extraction.
+- Matches distorted images to clean ones using **cosine similarity**.
+- Evaluates with **accuracy, F1 score**.
+- Provides ** visualizations** of matching results.
 
 **How to Run:**
 1. Place your data in `Task_B/train/` and `Task_B/val/` with each person in a separate folder.  
@@ -110,9 +117,23 @@ Match a face image (including distorted versions) to the correct person.
     │   └── task-b.ipynb
     ```
 5. The default dataset paths (`./train`, `./val`) will work as long as you run the notebook from inside the `Task_B` folder.
-6. Change the "val_dir" path with your test dataset path if needed.
+6. Change the "val_dir" path if testing on another dataset.
 
 ---
+
+## Evaluation Metrics
+
+✅ Accuracy
+
+✅ Precision
+
+✅ Recall
+
+✅ F1-score
+
+✅ Confusion Matrix (for Task A)
+
+✅ Matching visualizations (for Task B)
 
 ## Requirements
 
@@ -134,15 +155,29 @@ pip install torch torchvision facenet-pytorch numpy pillow matplotlib scikit-lea
 
 ---
 
+## Submission Guidelines
+ 
+This repository includes:
+
+✅ Clean, well-commented Jupyter notebooks for both tasks
+
+✅ Training and validation results
+
+✅ Easy-to-modify dataset paths
+
+✅ Pretrained model weights (if applicable)
+
+✅ A README.md with complete instructions
+
+✅ Test-time script can be adapted to new data via test_dir or val_dir variables
+
 ## Notes
 
-- Update the dataset paths in the notebooks only if your folder structure is different.
-- Both notebooks are well-commented for easy understanding and modification.
-- Always check your current working directory with:
+Always check your current working directory with:
     ```python
     import os
     print(os.getcwd())
     ```
-  and make sure it matches the folder containing your notebook and data.
+...to ensure the notebook is running from the correct directory.
 
 ---
