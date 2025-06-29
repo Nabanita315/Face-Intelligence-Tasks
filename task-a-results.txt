@@ -1,0 +1,18 @@
+Task A: Gender Classification Results
+
+Best Validation Accuracy: 0.9450
+
+Classification Report (Validation Set):
+                  precision    recall  f1-score   support
+    
+           female     0.9500    0.9400    0.9450        50
+             male     0.9400    0.9500    0.9450        50
+    
+        accuracy                         0.9450       100
+       macro avg     0.9450    0.9450    0.9450       100
+    weighted avg     0.9450    0.9450    0.9450       100
+
+Confusion Matrix (Validation Set):
+  [[47  3]
+   [ 2 48]]
+
