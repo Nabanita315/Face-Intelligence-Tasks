@@ -93,8 +93,6 @@ This workflow describes each major step of the face recognition pipeline using F
 - **Set device:**  
   Use GPU if available; fallback to CPU.
 
----
-
 2. **Data and Model Preparation**
 - **Define directory structure:**  
   - `train_dir` (for registration, if needed)  
@@ -102,8 +100,6 @@ This workflow describes each major step of the face recognition pipeline using F
 - **Load pretrained models:**  
   - `InceptionResnetV1` (FaceNet, for embeddings)  
   - `MTCNN` (for face detection and alignment)
-
----
 
 3. **Embedding Extraction with TTA**
 - **Test-Time Augmentation (TTA):**  
@@ -113,8 +109,6 @@ This workflow describes each major step of the face recognition pipeline using F
 - **Get embeddings:**  
   Pass detected faces through FaceNet and average the results to obtain a robust embedding.
 
----
-
 4. **Build Validation Feature Database**
 - **Iterate over each person in `val_dir`:**  
   - For each clean (non-distorted) image:
@@ -122,8 +116,6 @@ This workflow describes each major step of the face recognition pipeline using F
     - Store embeddings in a dictionary:  
       `{person_name: [embedding1, embedding2, ...]}`
       
----
-
 5. **Distorted Image Matching**
 - **Iterate over each person’s "distortion" folder in `val_dir`:**  
   - For each distorted image:
@@ -131,15 +123,11 @@ This workflow describes each major step of the face recognition pipeline using F
     - Compute cosine similarity with every stored embedding in the validation feature DB.
     - Identify the most similar person (highest similarity score).
 
----
-
 6. **Thresholding and Result Storage**
 - **Apply similarity threshold:**  
   Only accept a match if the score exceeds a set threshold (e.g., 0.65).
 - **Store results:**  
   Save file name, true label, predicted label, similarity score, and match indicator.
-
----
 
 7. **Evaluation and Analysis**
 - **Print sample results.**
@@ -151,33 +139,13 @@ This workflow describes each major step of the face recognition pipeline using F
 - **Cosine similarity histogram:**  
   Visualize the distribution of similarity scores for matches and mismatches.
 
----
-
 8. **Visualization**
 - **Threshold tuning curve:**  
   Shows how accuracy and F1 score vary with threshold.
 - **Histogram of similarity scores:**  
   Compare genuine vs imposter match distributions.
 
----
-
 9. **End**
-
----
-
-**Summary Table**
-
-| Step | Description                                              |
-|------|----------------------------------------------------------|
-| 1    | Setup & Dependencies                                     |
-| 2    | Data and Model Preparation                               |
-| 3    | Embedding Extraction with TTA                            |
-| 4    | Build Validation Feature Database                        |
-| 5    | Distorted Image Matching                                 |
-| 6    | Thresholding and Result Storage                          |
-| 7    | Evaluation and Analysis                                  |
-| 8    | Visualization                                            |
-| 9    | End                                                      |
 
 **Flowchart:**
 
