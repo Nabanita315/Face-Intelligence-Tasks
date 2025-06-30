@@ -41,6 +41,8 @@ Train a model to classify face images as either male or female.
 
 **Workflow:**
 
+TaskA-workflow.md
+
 **Flowchart:**
 
 https://github.com/Nabanita315/Face-Intelligence-Tasks/blob/main/TaskA-Flowchart.png
