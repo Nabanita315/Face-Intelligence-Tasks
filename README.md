@@ -39,6 +39,8 @@ Train a model to classify face images as either male or female.
 - Handles class imbalance using weighted sampling.
 - Evaluates performance with  **accuracy, precision, recall, F1-score** and **confusion matrix**.
 
+**Workflow:**
+
 **How to Run:**
 1. Place your data in `Task_A/train/` and `Task_A/val/` with subfolders `male/` and `female/`.
 2. Open a terminal or Jupyter/VS Code and **change your working directory to `Task_A`**:
@@ -73,6 +75,8 @@ Match face images (including distorted versions) to their corresponding identiti
 - Matches distorted images to clean ones using **cosine similarity**.
 - Evaluates with **accuracy, F1 score**.
 - Provides ** visualizations** of matching results.
+
+**Workflow:**
 
 **How to Run:**
 1. Place your data in `Task_B/train/` and `Task_B/val/` with each person in a separate folder.  
