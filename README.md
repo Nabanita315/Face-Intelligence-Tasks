@@ -82,13 +82,11 @@ Match face images (including distorted versions) to their corresponding identiti
 
 **Workflow:**
 
-# Face Recognition with Cosine Similarity Matching — Workflow
-
 This workflow describes each major step of the face recognition pipeline using Facenet-PyTorch, including data handling, feature extraction, matching, and evaluation.
 
 ---
 
-## 1. **Setup & Dependencies**
+1. **Setup & Dependencies**
 - **Install required packages:**  
   `facenet-pytorch`, `torch`, `torchvision`, `pillow`, `numpy`, `matplotlib`, `scikit-learn`, `seaborn`, `tqdm`
 - **Import libraries.**
@@ -97,7 +95,7 @@ This workflow describes each major step of the face recognition pipeline using F
 
 ---
 
-## 2. **Data and Model Preparation**
+2. **Data and Model Preparation**
 - **Define directory structure:**  
   - `train_dir` (for registration, if needed)  
   - `val_dir` (validation/test set, including "distortion" folders)
@@ -107,7 +105,7 @@ This workflow describes each major step of the face recognition pipeline using F
 
 ---
 
-## 3. **Embedding Extraction with TTA**
+3. **Embedding Extraction with TTA**
 - **Test-Time Augmentation (TTA):**  
   For each image, generate multiple augmented versions (brightness, sharpness, contrast, original).
 - **Face detection & alignment:**  
@@ -117,7 +115,7 @@ This workflow describes each major step of the face recognition pipeline using F
 
 ---
 
-## 4. **Build Validation Feature Database**
+4. **Build Validation Feature Database**
 - **Iterate over each person in `val_dir`:**  
   - For each clean (non-distorted) image:
     - Extract embedding (using TTA).
@@ -126,7 +124,7 @@ This workflow describes each major step of the face recognition pipeline using F
       
 ---
 
-## 5. **Distorted Image Matching**
+5. **Distorted Image Matching**
 - **Iterate over each person’s "distortion" folder in `val_dir`:**  
   - For each distorted image:
     - Extract embedding.
@@ -135,7 +133,7 @@ This workflow describes each major step of the face recognition pipeline using F
 
 ---
 
-## 6. **Thresholding and Result Storage**
+6. **Thresholding and Result Storage**
 - **Apply similarity threshold:**  
   Only accept a match if the score exceeds a set threshold (e.g., 0.65).
 - **Store results:**  
@@ -143,7 +141,7 @@ This workflow describes each major step of the face recognition pipeline using F
 
 ---
 
-## 7. **Evaluation and Analysis**
+7. **Evaluation and Analysis**
 - **Print sample results.**
 - **Compute metrics:**  
   - Top-1 Accuracy  
@@ -155,7 +153,7 @@ This workflow describes each major step of the face recognition pipeline using F
 
 ---
 
-## 8. **Visualization**
+8. **Visualization**
 - **Threshold tuning curve:**  
   Shows how accuracy and F1 score vary with threshold.
 - **Histogram of similarity scores:**  
@@ -163,7 +161,7 @@ This workflow describes each major step of the face recognition pipeline using F
 
 ---
 
-## 9. **End**
+9. **End**
 
 ---
 
