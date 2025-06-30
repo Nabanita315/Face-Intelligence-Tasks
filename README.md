@@ -43,6 +43,8 @@ Train a model to classify face images as either male or female.
 
 **Flowchart:**
 
+https://github.com/Nabanita315/Face-Intelligence-Tasks/blob/main/TaskA-Flowchart.png
+
 **How to Run:**
 1. Place your data in `Task_A/train/` and `Task_A/val/` with subfolders `male/` and `female/`.
 2. Open a terminal or Jupyter/VS Code and **change your working directory to `Task_A`**:
