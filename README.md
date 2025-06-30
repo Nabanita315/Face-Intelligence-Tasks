@@ -84,6 +84,8 @@ Match face images (including distorted versions) to their corresponding identiti
 
 **Flowchart:**
 
+https://github.com/Nabanita315/Face-Intelligence-Tasks/blob/main/TaskB-Flowchart.png
+
 **How to Run:**
 1. Place your data in `Task_B/train/` and `Task_B/val/` with each person in a separate folder.  
    Place distorted images in a `distortion/` subfolder inside each person’s folder.
