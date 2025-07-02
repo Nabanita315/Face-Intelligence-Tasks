@@ -29,11 +29,10 @@ The "Face-Intelligence-Tasks" repository provides solutions for two advanced com
 
 ## Innovations
 
-- **Distortion Robustness**: The solution for Task B is specifically designed to handle distorted images, a challenging scenario in face recognition.
-- **Plug-and-Play Architecture**: Both tasks use clean, well-commented Jupyter notebooks, making it easy to adapt to other datasets or integrate further models.
-- **Visualization**: Both tasks provide visualization of results, aiding interpretability and debugging.
-- **Flexible Data Paths**: All data paths are parameterized, allowing seamless adaptation for new data without code rewrites.
-
+- **Distortion Robustness**: Task B is specifically addressed by a solution that can cope with distorted images, which is a difficult situation in face recognition.
+- **Plug-and-Play Architecture**:Both tasks leverage clean, well-documented Jupyter notebooks, so it is simple to transfer to other datasets or plug in additional models.
+- **Visualization**: Both activities offer visualization of outcomes, facilitating interpretability and debugging.
+- **Flexible Data Paths**: All data paths are parameterized, enabling smooth adjustment for new data without code rewriting.
 ---
 
 ## Requirements
@@ -63,4 +62,4 @@ Comys_Hackathon5/
 
 ## Conclusion
 
-This repository demonstrates robust, modular approaches to challenging face intelligence tasks, combining state-of-the-art pretrained models, thoughtful data organization, and practical engineering for rapid adaptation and evaluation.
+This repository shows strong, modular ways to tackle difficult face intelligence tasks by using the best pretrained models available, organizing data in a smart way, and doing practical engineering to make it easy to adapt and test quickly.
