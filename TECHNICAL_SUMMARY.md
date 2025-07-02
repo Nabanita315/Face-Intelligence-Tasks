@@ -15,8 +15,8 @@ The "Face-Intelligence-Tasks" repository provides solutions for two advanced com
 
 - **Model**: Utilizes a pretrained ResNet-18 convolutional neural network, fine-tuned for gender classification.
 - **Data Pipeline**: Dataset is organized into `train/` and `val/` folders, each containing `male/` and `female/` subfolders.
-- **Training**: The notebook (`task-a.ipynb`) handles data loading, augmentation, model training, validation, and testing. Performance metrics such as accuracy, precision, recall, F1-score, and confusion matrix are reported.
-- **Adaptability**: Paths for training, validation, and testing datasets are easily configurable, supporting new datasets with minimal changes.
+- **Training**: Data loading, augmentation, model training, validation, and testing are all managed by the notebook (task-a.ipynb). Performance metrics are reported, including F1-score, confusion matrix, recall, accuracy, and precision.
+- **Adaptability**: It is easy to set up paths for training, validation, and testing datasets, which makes it easy to add new datasets with few changes.
 
 ### Task B: Face Recognition with Distorted Images
 
