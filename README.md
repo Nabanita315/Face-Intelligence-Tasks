@@ -69,6 +69,8 @@ https://github.com/Nabanita315/Face-Intelligence-Tasks/blob/main/TaskA-Flowchart
 6. The "train_dir" and "val_dir" contains training data directory path and validation data directory path respectively.
 7. For evaluating on a new dataset, change the path of "**test_dir**" with your data directory path.
 
+
+**:**
 ---
 
 ## Task B: Face Recognition with Distorted Images
