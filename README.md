@@ -119,8 +119,8 @@ Match face images (including distorted versions) to their corresponding identiti
 **Highlights:**
 - Uses a pretrained **FaceNet** model for embedding extraction.
 - Matches distorted images to clean ones using **cosine similarity**.
-- Evaluates with **accuracy, F1 score**.
-- Provides ** visualizations** of matching results.
+- Evaluates with **Top-1 Accuracy , Macro-averaged F1 score**.
+- Provides **visualizations** of matching results.
 
 **Workflow:**
 
