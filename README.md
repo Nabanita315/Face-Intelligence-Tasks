@@ -252,10 +252,7 @@ This repository includes:
 To make sure the notebook is operating from the correct directory, always use the following command to verify your current working directory:
     
     ```
-   
     import os
     print(os.getcwd())
-    
     ```
-
 ---
