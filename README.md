@@ -74,7 +74,7 @@ https://github.com/Nabanita315/Face-Intelligence-Tasks/blob/main/TaskA-Flowchart
 
 ✅ Evaluation Metrics 
 
-**1. Accuracy**
+**1. Accuracy:**
 - Training and validation accuracy are printed after every epoch.
 - Calculated as:
 correct_predictions / total_samples
@@ -179,7 +179,7 @@ https://github.com/Nabanita315/Face-Intelligence-Tasks/blob/main/TaskB-Flowchart
 
 ✅ Evaluation Metrics 
 
-**1. Top-1 Accuracy**
+**1. Top-1 Accuracy:**
 top1_acc = accuracy_score(true_labels, pred_labels)
 - Measures whether the predicted identity matches the true identity.
 - Match is only accepted if:
