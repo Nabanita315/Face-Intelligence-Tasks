@@ -2,10 +2,10 @@
 
 ## Overview
 
-The "Face-Intelligence-Tasks" repository provides solutions for two advanced computer vision challenges using the FACECOM dataset:
+The "Face-Intelligence-Tasks" repository offers solutions for two advanced computer vision tasks using the FACECOM dataset:
 
-- **Task A: Gender Classification** — Binary classification of facial images as male or female.
-- **Task B: Face Recognition with Distorted Images** — Multi-class classification to match distorted or altered face images to their correct identities.
+- **Task A: Gender Classification** — A binary classification for a facial image to be either a male, or a female.
+- **Task B:  Face Recognition with Image Distortion — Multi-class classification to recognize distorted or edited images of faces to genuine faces.
 
 ---
 
@@ -13,9 +13,9 @@ The "Face-Intelligence-Tasks" repository provides solutions for two advanced com
 
 ### Task A: Gender Classification
 
-- **Model**: Utilizes a pretrained ResNet-18 convolutional neural network, fine-tuned for gender classification.
-- **Data Pipeline**: Dataset is organized into `train/` and `val/` folders, each containing `male/` and `female/` subfolders.
-- **Training**: Data loading, augmentation, model training, validation, and testing are all managed by the notebook (task-a.ipynb). Performance metrics are reported, including F1-score, confusion matrix, recall, accuracy, and precision.
+- **Model**: It is based on the pre-trained ResNet-18 convolutional neural network, which is fine- tuned to predict gender.
+- **Data Pipeline**:Dataset structure is under train/, val/ folder that separately has male/, female/ folder.
+- **Training**:  Notebook (task-a.) orchestates data loading, augmentation, model training, validation, and testing. ipynb). Comparison of performance indicators are presented, including F1-score, confusion matrix, recall, accuracy, and precision.
 - **Adaptability**: It is easy to set up paths for training, validation, and testing datasets, which makes it easy to add new datasets with few changes.
 
 ### Task B: Face Recognition with Distorted Images
@@ -29,10 +29,10 @@ The "Face-Intelligence-Tasks" repository provides solutions for two advanced com
 
 ## Innovations
 
-- **Distortion Robustness**: Task B is specifically addressed by a solution that can cope with distorted images, which is a difficult situation in face recognition.
-- **Plug-and-Play Architecture**:Both tasks leverage clean, well-documented Jupyter notebooks, so it is simple to transfer to other datasets or plug in additional models.
-- **Visualization**: Both activities offer visualization of outcomes, facilitating interpretability and debugging.
-- **Flexible Data Paths**: All data paths are parameterized, enabling smooth adjustment for new data without code rewriting.
+- **Distortion Robustness**: A solution that can handle distorted images, a challenging scenario in face recognition, is specifically designed to address Task B.
+- **Plug-and-Play Architecture**: Both tasks make use of tidy, well-documented Jupyter notebooks, making it easy to plug in extra models or transfer to different datasets.
+- **Visualization**: Both exercises provide a visual representation of the results, which makes debugging and interpretation easier.
+- **Adaptable Data Paths**: Since every data path is parameterized, adding new data can be done without requiring code rewriting.
 ---
 
 ## Requirements
@@ -62,4 +62,4 @@ Comys_Hackathon5/
 
 ## Conclusion
 
-This repository shows strong, modular ways to tackle difficult face intelligence tasks by using the best pretrained models available, organizing data in a smart way, and doing practical engineering to make it easy to adapt and test quickly.
+Using the best pretrained models available, clever data organization, and practical engineering to facilitate rapid testing and adaptation, this repository demonstrates robust, modular approaches to challenging face intelligence tasks.
