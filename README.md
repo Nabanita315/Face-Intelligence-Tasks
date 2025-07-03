@@ -249,11 +249,10 @@ This repository includes:
 
 ## Notes
 
-Always check your current working directory with:
+To make sure the notebook is operating from the correct directory, always use the following command to verify your current working directory:
     ```python
     import os
     print(os.getcwd())
     ```
-...to ensure the notebook is running from the correct directory.
-
+    
 ---
