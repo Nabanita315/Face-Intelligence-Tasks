@@ -70,7 +70,8 @@ https://github.com/Nabanita315/Face-Intelligence-Tasks/blob/main/TaskA-Flowchart
 7. For evaluating on a new dataset, change the path of "**test_dir**" with your data directory path.
 
 
-**:**
+**Key points:**
+1. .
 ---
 
 ## Task B: Face Recognition with Distorted Images
