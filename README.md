@@ -75,19 +75,19 @@ https://github.com/Nabanita315/Face-Intelligence-Tasks/blob/main/TaskA-Flowchart
 ✅ Evaluation Metrics 
 
 1. Accuracy
---Training and validation accuracy are printed after every epoch.
---Calculated as:
+-Training and validation accuracy are printed after every epoch.
+-Calculated as:
 correct_predictions / total_samples
 
 2. Classification Report (sklearn.metrics.classification_report):
    Precision, Recall, F1-score, and Support for each class are printed for both:
-   --Validation set (after training)
-   --Test set (in test_model())
+   -Validation set (after training)
+   -Test set (in test_model())
 
 4. Confusion Matrix (ConfusionMatrixDisplay):
    Visualizes the true vs. predicted classes for:
-   --Validation set
-   --Test set
+   -Validation set
+   -Test set
 
 ✅ Model Weights Used
 
