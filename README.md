@@ -92,11 +92,11 @@ correct_predictions / total_samples
 ✅ Model Weights Used
 
 **1.Base Model:**
-- torchvision.models.resnet18(weights=models.ResNet18_Weights.DEFAULT)
+torchvision.models.resnet18(weights=models.ResNet18_Weights.DEFAULT)
 - This loads ImageNet-pretrained weights for the ResNet18 model.
 
 **2. Modified Head:**
-- model.fc = nn.Sequential(
+model.fc = nn.Sequential(
     nn.Dropout(0.4),
     nn.Linear(model.fc.in_features, num_classes)
 )
@@ -175,25 +175,6 @@ https://github.com/Nabanita315/Face-Intelligence-Tasks/blob/main/TaskB-Flowchart
 5. The default dataset paths (`./train`, `./val`) will work as long as you run the notebook from inside the `Task_B` folder.
 6. Change the "**val_dir**" path if testing on another dataset.
 
----
-
-## Requirements
-
-    - Python 3.8+
-    - torch
-    - torchvision
-    - facenet-pytorch
-    - numpy
-    - pillow
-    - matplotlib
-    - scikit-learn
-    - tqdm
-    - seaborn
-
-Install requirements with:
-```bash
-pip install torch torchvision facenet-pytorch numpy pillow matplotlib scikit-learn tqdm seaborn
-```
 **Key points:**
 
 ✅ Evaluation Metrics 
@@ -233,7 +214,23 @@ macro_f1 = f1_score(true_valid, pred_valid, average='macro')
 - This loads pretrained FaceNet weights trained on the VGGFace2 dataset. The weights come from the FaceNet model trained to embed faces where similar faces are closer.
 
 ---
+## Requirements
 
+    - Python 3.8+
+    - torch
+    - torchvision
+    - facenet-pytorch
+    - numpy
+    - pillow
+    - matplotlib
+    - scikit-learn
+    - tqdm
+    - seaborn
+
+Install requirements with:
+```bash
+pip install torch torchvision facenet-pytorch numpy pillow matplotlib scikit-learn tqdm seaborn
+```
 ## Submission Guidelines
  
 This repository includes:
