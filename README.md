@@ -71,7 +71,44 @@ https://github.com/Nabanita315/Face-Intelligence-Tasks/blob/main/TaskA-Flowchart
 
 
 **Key points:**
-1. .
+
+✅ Evaluation Metrics 
+
+1. Accuracy
+--Training and validation accuracy are printed after every epoch.
+--Calculated as:
+correct_predictions / total_samples
+
+2. Classification Report (sklearn.metrics.classification_report):
+   Precision, Recall, F1-score, and Support for each class are printed for both:
+   --Validation set (after training)
+   --Test set (in test_model())
+
+4. Confusion Matrix (ConfusionMatrixDisplay):
+   Visualizes the true vs. predicted classes for:
+   --Validation set
+   --Test set
+
+✅ Model Weights Used
+
+1.Base Model:
+torchvision.models.resnet18(weights=models.ResNet18_Weights.DEFAULT)
+➤ This loads ImageNet-pretrained weights for the ResNet18 model.
+
+2. Modified Head:
+model.fc = nn.Sequential(
+    nn.Dropout(0.4),
+    nn.Linear(model.fc.in_features, num_classes)
+)
+➤ The final layer is replaced to fit the binary classification task (num_classes = 2).
+
+3. Saved Best Weights:
+➤ During training, the model with the best validation accuracy is saved:
+torch.save(model.state_dict(), "best_gender_model.pth")
+
+4. Testing:
+➤ The model is reloaded using the best saved weights:
+model.load_state_dict(torch.load("best_gender_model.pth", map_location=device))
 ---
 
 ## Task B: Face Recognition with Distorted Images
@@ -139,20 +176,6 @@ https://github.com/Nabanita315/Face-Intelligence-Tasks/blob/main/TaskB-Flowchart
 6. Change the "**val_dir**" path if testing on another dataset.
 
 ---
-
-## Evaluation Metrics
-
-✅ Accuracy
-
-✅ Precision
-
-✅ Recall
-
-✅ F1-score
-
-✅ Confusion Matrix (for Task A)
-
-✅ Matching visualizations (for Task B)
 
 ## Requirements
 
