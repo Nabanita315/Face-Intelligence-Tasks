@@ -31,13 +31,13 @@ Comys_Hackathon5/
 ## Task A: Gender Classification
 
 **Objective:**  
-Train a model to classify face images as either male or female.
+The goal is to teach a model to distinguish between male and female faces in pictures.
 
 **Highlights:**  
-- Uses a pretrained ResNet18 model
-- Includes data augmentation
-- Handles class imbalance using weighted sampling.
-- Evaluates performance with  **accuracy, precision, recall, F1-score** and **confusion matrix**.
+- employs a ResNet18 model that has been pretrained.
+- incorporates data augmentation.
+- uses weighted sampling to address class imbalance.
+- evaluates performance using the **confusion matrix, F1-score, recall, accuracy, and precision**.
 
 **Workflow:**
 
@@ -117,10 +117,10 @@ model.load_state_dict(torch.load("best_gender_model.pth", map_location=device))
 Match face images (including distorted versions) to their corresponding identities.
 
 **Highlights:**
-- Uses a pretrained **FaceNet** model for embedding extraction.
-- Matches distorted images to clean ones using **cosine similarity**.
-- Evaluates with **Top-1 Accuracy , Macro-averaged F1 score**.
-- Provides **visualizations** of matching results.
+- For embedding extraction, a pretrained **FaceNet** model is used.
+- Uses **cosine similarity** to match distorted images to clean ones.
+- **Top-1 Accuracy, Macro-averaged F1 score** is used for evaluation.
+- **Visualizations** of the corresponding results are provided.
 
 **Workflow:**
 
