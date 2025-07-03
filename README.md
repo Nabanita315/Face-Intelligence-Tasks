@@ -91,22 +91,22 @@ correct_predictions / total_samples
 
 ✅ Model Weights Used
 
-1.Base Model:
-torchvision.models.resnet18(weights=models.ResNet18_Weights.DEFAULT)
+**1.Base Model:**
+- torchvision.models.resnet18(weights=models.ResNet18_Weights.DEFAULT)
 ➤ This loads ImageNet-pretrained weights for the ResNet18 model.
 
-2. Modified Head:
-model.fc = nn.Sequential(
+**2. Modified Head:**
+- model.fc = nn.Sequential(
     nn.Dropout(0.4),
     nn.Linear(model.fc.in_features, num_classes)
 )
 ➤ The final layer is replaced to fit the binary classification task (num_classes = 2).
 
-3. Saved Best Weights:
+**3. Saved Best Weights:**
 ➤ During training, the model with the best validation accuracy is saved:
 torch.save(model.state_dict(), "best_gender_model.pth")
 
-4. Testing:
+**4. Testing:**
 ➤ The model is reloaded using the best saved weights:
 model.load_state_dict(torch.load("best_gender_model.pth", map_location=device))
 ---
