@@ -194,6 +194,43 @@ Install requirements with:
 ```bash
 pip install torch torchvision facenet-pytorch numpy pillow matplotlib scikit-learn tqdm seaborn
 ```
+**Key points:**
+
+✅ Evaluation Metrics 
+
+**1. Top-1 Accuracy**
+top1_acc = accuracy_score(true_labels, pred_labels)
+- Measures whether the predicted identity matches the true identity.
+- Match is only accepted if:
+    - Predicted name matches true name
+    - Cosine similarity > threshold (default = 0.65)
+
+**2. Macro F1 Score:**
+macro_f1 = f1_score(true_valid, pred_valid, average='macro')
+   - Macro-averaged across all valid (accepted) predictions
+   - Useful in imbalanced class settings
+   - Ignores mismatches and thresholded-out examples
+
+**3. Cosine Similarity:**
+  cosine_similarity([embedding], embeddings)
+   - Used to match a distorted face to gallery embeddings.
+   - Threshold (default 0.65) determines if a match is valid
+   - Plotted with histograms.
+     
+**4. Threshold Tuning Curve:**
+   threshold_curve(results)
+   - This helps determine an optimal cosine similarity threshold.
+
+**5.  Histogram of Similarity Scores**
+  plt.hist(match_scores, ...)
+  plt.hist(mismatch_scores, ...)
+   - Distribution of matches vs. mismatches with a threshold reference line.
+
+✅ Model Weights Used
+
+**Pretrained Model:**
+- facenet = InceptionResnetV1(pretrained='vggface2', classify=False).eval().to(device)
+- This loads pretrained FaceNet weights trained on the VGGFace2 dataset. The weights come from the FaceNet model trained to embed faces where similar faces are closer.
 
 ---
 
