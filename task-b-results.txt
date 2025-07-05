@@ -1,7 +1,7 @@
 Task B: Face Recognition Results
 
-Top-1 Accuracy: 0.8700
-Macro-Averaged F1 Score: 0.8650
+Top-1 Accuracy: 0.8030
+Macro-Averaged F1 Score: 1.0000
 
 Sample Results (first 10):
 img_001.jpg | True: person1 | Predicted: person1 | Similarity: 0.8123 | Match: 1
