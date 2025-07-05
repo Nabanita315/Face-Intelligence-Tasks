@@ -10,10 +10,10 @@ Train Recall:    97.56%
 Train F1 Score:  97.56%
 
 📊 Final Validation Metrics:
-Val Accuracy:  93.36%
-Val Precision: 89.10%
-Val Recall:    89.10%
-Val F1 Score:  89.10%
+Val Accuracy:  93.60%
+Val Precision: 91.43%
+Val Recall:    86.81%
+Val F1 Score:  88.88%
 
 Confusion Matrix (Validation Set):
   [[60  19]
