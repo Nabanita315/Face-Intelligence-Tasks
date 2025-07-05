@@ -16,6 +16,6 @@ Val Recall:    89.10%
 Val F1 Score:  89.10%
 
 Confusion Matrix (Validation Set):
-  [[47  3]
-   [ 2 48]]
+  [[60  19]
+   [ 8  335]]
 
