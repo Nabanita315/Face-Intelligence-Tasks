@@ -4,10 +4,10 @@ Task A: Gender Classification Results
 ✅ Model saved as 'best_gender_model.pth'
 
 📊 Final Training Metrics:
-Train Accuracy:  96.52%
-Train Precision: 96.52%
-Train Recall:    96.52%
-Train F1 Score:  96.52%
+Train Accuracy:  97.56%
+Train Precision: 97.56%
+Train Recall:    97.56%
+Train F1 Score:  97.56%
 
 📊 Final Validation Metrics:
 Val Accuracy:  93.36%
