@@ -3,17 +3,17 @@ Task B: Face Recognition Results
 Top-1 Accuracy: 0.8030
 Macro-Averaged F1 Score: 1.0000
 
-Sample Results (first 10):
-img_001.jpg | True: person1 | Predicted: person1 | Similarity: 0.8123 | Match: 1
-img_002.jpg | True: person2 | Predicted: person2 | Similarity: 0.7954 | Match: 1
-img_003.jpg | True: person3 | Predicted: person5 | Similarity: 0.6012 | Match: 0
-img_004.jpg | True: person4 | Predicted: person4 | Similarity: 0.8301 | Match: 1
-img_005.jpg | True: person5 | Predicted: person5 | Similarity: 0.7802 | Match: 1
-img_006.jpg | True: person6 | Predicted: person6 | Similarity: 0.8100 | Match: 1
-img_007.jpg | True: person7 | Predicted: person2 | Similarity: 0.5900 | Match: 0
-img_008.jpg | True: person8 | Predicted: person8 | Similarity: 0.8500 | Match: 1
-img_009.jpg | True: person9 | Predicted: person9 | Similarity: 0.8200 | Match: 1
-img_010.jpg | True: person10 | Predicted: person10 | Similarity: 0.8000 | Match: 1
+📊 Sample Results (first 10):
+Kai-Uwe_Ricke_0001_foggy.jpg | True: Kai-Uwe_Ricke | Predicted: Kai-Uwe_Ricke | Similarity: 0.9191 | Match: 1
+Kai-Uwe_Ricke_0001_rainy.jpg | True: Kai-Uwe_Ricke | Predicted: Kai-Uwe_Ricke | Similarity: 0.6729 | Match: 1
+Kai-Uwe_Ricke_0001_resized.jpg | True: Kai-Uwe_Ricke | Predicted: Kai-Uwe_Ricke | Similarity: 0.9743 | Match: 1
+Kai-Uwe_Ricke_0001_noisy.jpg | True: Kai-Uwe_Ricke | Predicted: Kai-Uwe_Ricke | Similarity: 0.6907 | Match: 1
+Kai-Uwe_Ricke_0001_lowlight.jpg | True: Kai-Uwe_Ricke | Predicted: Kai-Uwe_Ricke | Similarity: 0.9616 | Match: 1
+Kai-Uwe_Ricke_0001_blurred.jpg | True: Kai-Uwe_Ricke | Predicted: Kai-Uwe_Ricke | Similarity: 0.8748 | Match: 1
+Hans_Eichel_0001_noisy.jpg | True: Hans_Eichel | Predicted: Hans_Eichel | Similarity: 0.6230 | Match: 0
+Hans_Eichel_0001_blurred.jpg | True: Hans_Eichel | Predicted: Hans_Eichel | Similarity: 0.8123 | Match: 1
+Hans_Eichel_0003_foggy.jpg | True: Hans_Eichel | Predicted: Hans_Eichel | Similarity: 0.9378 | Match: 1
+Hans_Eichel_0003_lowlight.jpg | True: Hans_Eichel | Predicted: Hans_Eichel | Similarity: 0.9207 | Match: 1
 
 Threshold used: 0.65
 
